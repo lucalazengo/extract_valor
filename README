@@ -1,27 +1,55 @@
-# Extrator de Valores Monetários e Contexto
+# 🚀 Extrator de Valores Monetários com Python e Docker
 
-Este projeto contém um script Python que extrai valores monetários de um texto e associa cada valor à sentença (contexto) em que ele aparece. O script utiliza expressões regulares para identificar os valores no padrão brasileiro e a biblioteca spaCy para segmentação do texto em sentenças. Foi criado uma aplicação streamlit para testar
+Este projeto é um extrator de valores monetários de textos em português usando **Python**, `spaCy` e `nltk`, com uma interface web desenvolvida em **Streamlit**.
 
-## Descrição
+---
 
-O código realiza as seguintes operações:
-- **Limpeza do Texto:** Remove quebras de linha e espaços extras para uniformizar o texto.
-- **Extração de Valores:** Utiliza uma expressão regular para encontrar valores monetários (ex.: `R$ 1.234,56`) no texto.
-- **Segmentação em Sentenças:** Usa o modelo de NLP do spaCy para dividir o texto em sentenças.
-- **Associação de Contexto:** Para cada valor encontrado, identifica a sentença que o contém e armazena essa informação.
+## 🎯 **Objetivo**
+O objetivo deste projeto é automatizar a extração de valores monetários de textos (como contratos, petições, etc.) e associá-los ao contexto em que aparecem.
 
-## Requisitos
+---
 
-- **Python 3**
-- **Bibliotecas Python:**
-  - `re` (nativo)
-  - `spacy`
-  - `nltk`
+## 🛠️ **Tecnologias Utilizadas**
+| Tecnologia | Versão/Descrição |
+|------------|------------------|
+| 🐍 **Python** | 3.9 |
+| 🌐 **Streamlit** | Framework para criação de interfaces interativas |
+| 🔎 **spaCy** | Biblioteca para NLP (Processamento de Linguagem Natural) |
+| 📖 **nltk** | Biblioteca para tokenização e análise de texto |
+| 🐳 **Docker** | Para construção e execução de containers |
 
-## Instalação
+---
 
-1. Clone o repositório ou baixe o arquivo `extrator.py`.
-2. Instale as dependências utilizando o `pip`:
+## 📂 **Estrutura do Projeto**
+```bash
+📂 extract_valor
+├── 📄 Dockerfile            # Configuração do Docker
+├── 📄 docker-compose.yml    # Configuração do Docker Compose
+├── 📄 requirements.txt      # Lista de dependências
+├── 📄 extract_b.py          # Lógica de extração de valores
+├── 📄 streamlit.py          # Interface Streamlit
+└── 📄 README.md             # Documentação
 
-   ```bash
-   pip install spacy nltk
+
+🚀 Como Executar Localmente
+
+🔹 1. Clone o repositório
+🔹 2. Crie o ambiente virtual:
+🔹 3. Ative o ambiente virtual:
+🔹 4. Instale as dependências:
+    **pip install -r requirements.txt**
+
+🔹 5. Execute a aplicação:
+    **streamlit run streamlitApp.py**
+
+🏛️ Créditos
+Este projeto foi desenvolvido pelo Tribunal de Justiça do Estado de Goiás (TJGO), pela Diretoria de Inteligência Artificial, Ciência de Dados e Estatística (DIACDE).
+
+🏆 Autor
+👤 Manuel Lucala Zengo
+📧 sir.lucala@gmail.com
+
+👤 Willgnner Ferreira Santos
+
+
+
