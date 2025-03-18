@@ -1,0 +1,23 @@
+# Arquivos de sistema
+__pycache__/
+*.pyc
+*.pyo
+
+# Configurações de ambiente virtual
+.venv/
+env/
+.venv/*
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Configurações do Docker
+docker-compose.override.yml
+.env
+
+# Arquivos gerados pelo sistema
+.DS_Store
+Thumbs.db

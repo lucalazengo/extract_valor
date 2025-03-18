@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: extract_valor
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8501:8501"
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped

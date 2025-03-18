@@ -1,0 +1,27 @@
+# Extrator de Valores Monetários e Contexto
+
+Este projeto contém um script Python que extrai valores monetários de um texto e associa cada valor à sentença (contexto) em que ele aparece. O script utiliza expressões regulares para identificar os valores no padrão brasileiro e a biblioteca spaCy para segmentação do texto em sentenças. Foi criado uma aplicação streamlit para testar
+
+## Descrição
+
+O código realiza as seguintes operações:
+- **Limpeza do Texto:** Remove quebras de linha e espaços extras para uniformizar o texto.
+- **Extração de Valores:** Utiliza uma expressão regular para encontrar valores monetários (ex.: `R$ 1.234,56`) no texto.
+- **Segmentação em Sentenças:** Usa o modelo de NLP do spaCy para dividir o texto em sentenças.
+- **Associação de Contexto:** Para cada valor encontrado, identifica a sentença que o contém e armazena essa informação.
+
+## Requisitos
+
+- **Python 3**
+- **Bibliotecas Python:**
+  - `re` (nativo)
+  - `spacy`
+  - `nltk`
+
+## Instalação
+
+1. Clone o repositório ou baixe o arquivo `extrator.py`.
+2. Instale as dependências utilizando o `pip`:
+
+   ```bash
+   pip install spacy nltk
