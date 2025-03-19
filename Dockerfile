@@ -12,4 +12,4 @@ RUN python -m nltk.downloader punkt
 EXPOSE 8501
 
 # 7. Comando para iniciar o Streamlit
-CMD ["streamlit", "run", "streamlit.py", "--server.port=8501", "--server.address=0.0.0.0"]
+CMD ["streamlit", "run", "streamlitApp.py", "--server.port=8501", "--server.address=0.0.0.0"]
