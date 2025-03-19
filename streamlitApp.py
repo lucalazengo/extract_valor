@@ -2,6 +2,14 @@
 import streamlit as st
 from extract_b import extrair_valores_e_contexto
 
+import os
+
+# Desativar WebSocket e configurar CORS
+os.environ["STREAMLIT_SERVER_ENABLE_WEBSOCKETS"] = "false"
+os.environ["STREAMLIT_SERVER_ENABLE_CORS"] = "true"
+os.environ["STREAMLIT_SERVER_ENABLE_XSRF_PROTECTION"] = "false"
+os.environ["STREAMLIT_SERVER_ALLOWED_ORIGINS"] = "*"
+
 # Configuração da página
 st.set_page_config(
     page_title="Extrator Avançado de Valores Monetários",
