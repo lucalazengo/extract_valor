@@ -27,7 +27,7 @@ O objetivo deste projeto é automatizar a extração de valores monetários de t
 ├── 📄 docker-compose.yml    # Configuração do Docker Compose
 ├── 📄 requirements.txt      # Lista de dependências
 ├── 📄 extract_b.py          # Lógica de extração de valores
-├── 📄 streamlit.py          # Interface Streamlit
+├── 📄 streamlitApp.py          # Interface Streamlit
 └── 📄 README.md             # Documentação
 
 
